@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GST Calculator</title>
+  <link rel="stylesheet" href="gstcalc.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display-container">
+      <button class="copy-button" onclick="copyToClipboard()">COPY</button>
+      <textarea id="display" placeholder="0" readonly></textarea>
+    </div>
+    <div class="button-grid">
+      <button onclick="addGST(3)">3%</button>
+      <button onclick="addGST(5)">5%</button>
+      <button onclick="addGST(12)">12%</button>
+      <button onclick="addGST(18)">18%</button>
+      <button onclick="addGST(28)">28%</button>
+
+      <button onclick="addGST(-3)">-3%</button>
+      <button onclick="addGST(-5)">-5%</button>
+      <button onclick="addGST(-12)">-12%</button>
+      <button onclick="addGST(-18)">-18%</button>
+      <button onclick="addGST(-28)">-28%</button>
+
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button onclick="append('÷')">÷</button>
+      <button onclick="clearDisplay()">AC</button>
+
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button onclick="append('×')">×</button>
+      <button onclick="backspace()">←</button>
+
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button onclick="append('+')">+</button>
+      <button onclick="append('%')">%</button>
+
+      <button onclick="append('0')">0</button>
+      <button onclick="append('00')">00</button>
+      <button onclick="append('.')">.</button>
+      <button onclick="append('-')">−</button>
+      <button onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="gstcalc.js"></script>
+</body>
+</html>
